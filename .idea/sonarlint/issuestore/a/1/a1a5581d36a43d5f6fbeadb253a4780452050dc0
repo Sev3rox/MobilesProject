@@ -1,0 +1,11 @@
+
+a
+java:S1128"?Remove this unused import 'android.graphics.drawable.Drawable'.(Á‰º„ùÿÿÿÿ8‚œœˆğ.
+x
+java:S1488"[Immediately return this expression instead of assigning it to the temporary variable "bmp".(˜”ÆÔ8…¬ˆğ.
+X
+java:S1128";Remove this unused import 'java.net.MalformedURLException'.(ªËŞˆ8˜•ˆğ.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íâáüÿÿÿÿ8–èˆˆğ.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+M
+java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º8æ¿…ˆğ.

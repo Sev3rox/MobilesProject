@@ -1,0 +1,24 @@
+
+K
+java:S1128&")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8îçá‡ğ.
+M
+java:S1128%"0Remove this unused import 'java.io.InputStream'.(¹»º8îçá‡ğ.
+\
+java:S11614":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8å×ô¶ï.
+L
+java:S18747"*Remove this use of "of"; it is deprecated.(÷é«ùÿÿÿÿ8å×ô¶ï.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+a
+java:S1128	"?Remove this unused import 'android.graphics.drawable.Drawable'.(Á‰º„ùÿÿÿÿ8îçá‡ğ.
+T
+java:S1117N"7Rename "url" which hides the field declared at line 48.(ûá˜8ñöæ‡ğ.
+\
+java:S18747":Remove this use of "ViewModelProviders"; it is deprecated.(÷é«ùÿÿÿÿ8å×ô¶ï.
+M
+java:S1128'"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÍÂõ¶ï.
+r
+java:S1192W"PDefine a constant instead of duplicating this literal ">>>>>>>>>>>>>  " 4 times.(¡ÍÄĞúÿÿÿÿ8ñöæ‡ğ.
+€
+java:S1450/"^Remove the "photosViewModel" field and declare it as a local variable in the relevant methods.(·½²ßüÿÿÿÿ8Æşü‡ğ.
+W
+java:S2209="5Change this instance-reference to a static reference.(õùÿÿÿÿ8–ßïˆğ.

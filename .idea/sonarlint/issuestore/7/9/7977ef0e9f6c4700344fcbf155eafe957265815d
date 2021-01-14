@@ -1,0 +1,12 @@
+
+
+java:S1450"]Remove the "factsViewModel" field and declare it as a local variable in the relevant methods.(¥è‚Ÿûÿÿÿÿ8½Â½‰ï.
+\
+java:S1874":Remove this use of "ViewModelProviders"; it is deprecated.(´Ã¶úÿÿÿÿ8Ç¼‰ï.
+\
+java:S1161":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8Ç¼‰ï.
+q
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(—ˆÇø8´÷Ï‹ï.
+L
+java:S1874"*Remove this use of "of"; it is deprecated.(´Ã¶úÿÿÿÿ8Ç¼‰ï.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ó©‘Ù

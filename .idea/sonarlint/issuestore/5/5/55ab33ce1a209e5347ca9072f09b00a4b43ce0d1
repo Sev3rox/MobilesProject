@@ -1,0 +1,12 @@
+
+\
+java:S1874":Remove this use of "ViewModelProviders"; it is deprecated.(ƒú§¢øÿÿÿÿ8âÂ®‰ï.
+‚
+java:S1450"`Remove the "settingsViewModel" field and declare it as a local variable in the relevant methods.(Œê½ßúÿÿÿÿ8”‹°‰ï.
+L
+java:S1874"*Remove this use of "of"; it is deprecated.(ƒú§¢øÿÿÿÿ8âÂ®‰ï.
+\
+java:S1161":Add the "@Override" annotation above this method signature(î•Éðûÿÿÿÿ8âÂ®‰ï.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü·ÉÏ
+q
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÃÀù8î—Î‹ï.
