@@ -31,3 +31,9 @@ l
 <app/src/main/java/com/example/smproject/ui/Photos/Photo.java,7\5\7543ba77b1d27cf59774006047c078b4ea9a0315
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
+z
+Japp/src/main/java/com/example/smproject/ui/Photos/PhotosListViewModel.java,4\3\43cf95f09e9b24fbbea195419b723c40fd0aa3a5
+y
+Iapp/src/main/java/com/example/smproject/ui/Photos/PhotosListFragment.java,6\9\69c292f90c52bc9c21e7e1df117a5de0ac991318
+t
+Dapp/src/main/java/com/example/smproject/ui/Photos/CustomAdapter.java,8\c\8c9ede3a48852bdc9d2ef96c423041fa07f6417c

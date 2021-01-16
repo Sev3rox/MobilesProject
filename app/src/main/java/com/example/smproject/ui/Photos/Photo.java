@@ -9,6 +9,10 @@ public class Photo {
         this.id = i;
         this.url = url;
     }
+    public Photo(String url) {
+        super();
+        this.url = url;
+    }
     public String getId() {
         return id;
     }

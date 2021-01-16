@@ -3,4 +3,8 @@
     <string name="title_photos">Zdjęcia</string>
     <string name="title_facts">Fakty</string>
     <string name="title_settings">Opcje</string>
+    <string name="button1_photos">Następny</string>
+    <string name="button2_photos">Lista</string>
+    <string name="button3_photos">Kategorie</string>
+
 </resources>

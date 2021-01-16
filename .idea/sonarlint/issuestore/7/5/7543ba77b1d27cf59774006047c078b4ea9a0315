@@ -1,6 +1,6 @@
 
-O
-java:S1172"2Remove this unused method parameter "countryName".(èºˆì8ˆ¹Ç´ï.
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
 ƒ
-java:S4165"aRemove this useless assignment; "url" already holds the assigned value along all execution paths.(Ü¹ï³ÿÿÿÿÿ8ü°È´ï.
+java:S4165"aRemove this useless assignment; "url" already holds the assigned value along all execution paths.(Ü¹ï³ÿÿÿÿÿ8ü°È´ï.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+O
+java:S1172"2Remove this unused method parameter "countryName".(èºˆì8ˆ¹Ç´ï.
