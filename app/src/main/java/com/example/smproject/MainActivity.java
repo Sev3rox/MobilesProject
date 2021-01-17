@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.example.smproject.sqlite.DatabaseHandler;
 import com.example.smproject.sqlite.setings;
 import com.example.smproject.ui.Photos.PhotosCatsFragment;
+import com.example.smproject.ui.Photos.PhotosCatsRndFragment;
 import com.example.smproject.ui.Photos.PhotosFragment;
 import com.example.smproject.ui.Photos.PhotosListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -96,14 +97,23 @@ public void photoslist(){
         FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.nav_host_fragment, fragment2);
         ft.commit();
-//FragmentManager fm=getSupportFragmentManager();
-//fm.beginTransaction().add(R.id.nav_host_fragment, fragment2).commit();
+
 
 
     }
 
     public void photoscats(){
         PhotosCatsFragment fragment2 = new PhotosCatsFragment();
+        FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.commit();
+
+
+
+    }
+
+    public void photoscatsrnd(String pom){
+        PhotosCatsRndFragment fragment2 = new PhotosCatsRndFragment(pom);
         FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.nav_host_fragment, fragment2);
         ft.commit();

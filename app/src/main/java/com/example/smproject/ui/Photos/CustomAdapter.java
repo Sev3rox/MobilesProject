@@ -20,6 +20,8 @@ import java.util.List;
 public class CustomAdapter extends BaseAdapter {
     Context context;
     List<Photo> photos;
+
+    int pom2=0;
     CustomAdapter(Context context, List<Photo> photos){
         this.context=context;
         this.photos=photos;
@@ -43,23 +45,21 @@ public class CustomAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent){
         ViewHolder holder=null;
         LayoutInflater inf=(LayoutInflater)context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-        if(convertView==null){
+        if(convertView==null||(pom2<=10)){
             convertView=inf.inflate(R.layout.list_item,null);
             holder=new ViewHolder();
             holder.url_name=(TextView) convertView.findViewById(R.id.url_name);
             holder.profile_pic=(ImageView) convertView.findViewById(R.id.profile_pic);
-
             Photo row_pos=photos.get(position);
 
             holder.url_name.setText(row_pos.geturl());
             String pom=row_pos.geturl();
             Log.d(">>>>>>>>>>>>>  ", ""+pom);
             Glide.with(MainActivity.context).load(pom).into(holder.profile_pic);
-            holder.profile_pic.setImageDrawable(null);
-
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
+
         }
 
         return convertView;

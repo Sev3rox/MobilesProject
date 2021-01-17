@@ -22,7 +22,7 @@ public class Photo {
     public String geturl() {
         return url;
     }
-    public void seturl(String countryName) {
+    public void seturl(String url) {
         this.url = url;
     }
 }

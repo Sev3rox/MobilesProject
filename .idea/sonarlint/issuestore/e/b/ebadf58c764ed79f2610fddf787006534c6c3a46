@@ -1,0 +1,10 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+r
+java:S1192T"PDefine a constant instead of duplicating this literal ">>>>>>>>>>>>>  " 4 times.(¡ÍÄĞúÿÿÿÿ8€¹‰ñ.
+u
+java:S1450"SRemove the "but2" field and declare it as a local variable in the relevant methods.(ÄÔ«Àøÿÿÿÿ8şîõˆñ.
+p
+java:S1450"SRemove the "but1" field and declare it as a local variable in the relevant methods.(ÙÃÍ÷8şîõˆñ.
+\
+java:S1161%":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8·¯„ñ.

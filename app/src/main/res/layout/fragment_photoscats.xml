@@ -33,19 +33,19 @@
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:text="@string/button21_photos"
+                android:text="@string/button2_photos"
                 android:textColor="@color/colorText"
                 android:textSize="16sp" />
 
             <Button
-                android:id="@+id/buttonphotozdejcie3"
+                android:id="@+id/buttonphotozdjecie3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:text="@string/button2_photos"
+                android:text="@string/button21_photos"
                 android:textColor="@color/colorText"
                 android:textSize="16sp" />
 
@@ -64,26 +64,26 @@
             android:orientation="horizontal"
             tools:ignore="MissingConstraints">
             <Button
-                android:id="@+id/buttonphotolist11"
+                android:id="@+id/buttonphotobeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary2"
-                android:text="@string/button2_photos"
+                android:text="@string/button_beng"
                 android:textColor="@color/colorText2"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/buttonphotocat11"
+                android:id="@+id/buttonphotoabys"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary2"
-                android:text="@string/button3_photos"
+                android:text="@string/button_abys"
                 android:textColor="@color/colorText2"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -94,26 +94,26 @@
                 android:orientation="horizontal"
                 tools:ignore="MissingConstraints">
                 <Button
-                    android:id="@+id/buttonphotolist113"
+                    android:id="@+id/buttonphotobali"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary2"
-                    android:text="@string/button2_photos"
+                    android:text="@string/button_bali"
                     android:textColor="@color/colorText2"
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/buttonphotocat113"
+                    android:id="@+id/buttonphotobirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary2"
-                    android:text="@string/button3_photos"
+                    android:text="@string/button_birm"
                     android:textColor="@color/colorText2"
                     android:textSize="18sp" />
         </LinearLayout>
@@ -124,26 +124,26 @@
                 android:orientation="horizontal"
                 tools:ignore="MissingConstraints">
                 <Button
-                    android:id="@+id/buttonphotolist112"
+                    android:id="@+id/buttonphotobomb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary2"
-                    android:text="@string/button2_photos"
+                    android:text="@string/button_bomb"
                     android:textColor="@color/colorText2"
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/buttonphotocat112"
+                    android:id="@+id/buttonphotobure"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary2"
-                    android:text="@string/button3_photos"
+                    android:text="@string/button_bure"
                     android:textColor="@color/colorText2"
                     android:textSize="18sp" />
         </LinearLayout>
@@ -153,26 +153,26 @@
                 android:layout_height="80dp"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/buttonphotolist111"
+                    android:id="@+id/buttonphotohima"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary2"
-                    android:text="@string/button2_photos"
+                    android:text="@string/button_hima"
                     android:textColor="@color/colorText2"
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/buttonphotocat111"
+                    android:id="@+id/buttonphotojava"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary2"
-                    android:text="@string/button3_photos"
+                    android:text="@string/button_java"
                     android:textColor="@color/colorText2"
                     android:textSize="18sp" />
         </LinearLayout>

@@ -39,3 +39,5 @@ t
 Dapp/src/main/java/com/example/smproject/ui/Photos/CustomAdapter.java,8\c\8c9ede3a48852bdc9d2ef96c423041fa07f6417c
 y
 Iapp/src/main/java/com/example/smproject/ui/Photos/PhotosCatsFragment.java,5\0\502960a1ec02f5b3779bfef3ae983a40a7d628a5
+|
+Lapp/src/main/java/com/example/smproject/ui/Photos/PhotosCatsRndFragment.java,e\b\ebadf58c764ed79f2610fddf787006534c6c3a46

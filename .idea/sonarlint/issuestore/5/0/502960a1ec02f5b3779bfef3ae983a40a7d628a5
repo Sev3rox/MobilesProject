@@ -1,6 +1,24 @@
 
-y
-java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "root".(ì¸å8¦Âñ.
-\
-java:S1161":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8¦Âñ.
+p
+java:S1450"SRemove the "but4" field and declare it as a local variable in the relevant methods.(ñş¬8•Œîƒñ.
+u
+java:S1450"SRemove the "but9" field and declare it as a local variable in the relevant methods.(í’àÆÿÿÿÿÿ8•Œîƒñ.
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+u
+java:S1450"SRemove the "but5" field and declare it as a local variable in the relevant methods.(Øˆ¬Êûÿÿÿÿ8•Œîƒñ.
+p
+java:S1450"SRemove the "but1" field and declare it as a local variable in the relevant methods.(ÙÃÍ÷8È¨Æƒñ.
+p
+java:S1450"SRemove the "but8" field and declare it as a local variable in the relevant methods.(İƒÜË8•Œîƒñ.
+u
+java:S1450"SRemove the "but2" field and declare it as a local variable in the relevant methods.(ÄÔ«Àøÿÿÿÿ8È¨Æƒñ.
+p
+java:S1450"SRemove the "but6" field and declare it as a local variable in the relevant methods.(ëŸ¦æ8•Œîƒñ.
+u
+java:S1450"SRemove the "but7" field and declare it as a local variable in the relevant methods.(ˆ±Äóıÿÿÿÿ8•Œîƒñ.
+q
+java:S1450"TRemove the "but10" field and declare it as a local variable in the relevant methods.(˜Ô†Ì8•Œîƒñ.
+p
+java:S1450"SRemove the "but3" field and declare it as a local variable in the relevant methods.(Í¦¸Î8È¨Æƒñ.
+\
+java:S1161":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8ü Çƒñ.
