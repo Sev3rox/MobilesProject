@@ -7,11 +7,47 @@
     android:background="@raw/cats"
     tools:context=".ui.Photos.PhotosListFragment"
     android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonphotozdjecia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/button21_photos"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonphotocat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/button3_photos"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+    </LinearLayout>
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="fill_parent"
+        android:paddingBottom="60dp">
+
+    </ListView>
 
 
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -46,6 +47,8 @@ ListView mylistview;
 Photo pho;
 String urll;
 String[] urls;
+    private Button but1;
+    private Button but2;
     public PhotosListFragment(){}
 
 
@@ -55,13 +58,35 @@ String[] urls;
             photosListViewModel =ViewModelProviders.of(this).get(PhotosListViewModel.class);
             View root = inflater.inflate(R.layout.fragment_photoslist, container, false);
 
+
+            but1 = (Button)root.findViewById(R.id.buttonphotozdjecia);
+            but2 = (Button)root.findViewById(R.id.buttonphotocat2);
+
+
+            but1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ((MainActivity)getActivity()).photoszdjecia();
+                }
+            });
+            but2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                  //  Toast toast = Toast.makeText(MainActivity.context, "stmh", Toast.LENGTH_SHORT);
+                    // toast.show();
+                }
+            });
+
+
             photos=new ArrayList<Photo>();
             RequestQueue queue = Volley.newRequestQueue(getActivity().getApplicationContext());
 StringRequest pom=apitext(new VolleyCallBack() {
     @Override
     public void onSuccess(Photo item,View root,PhotosListFragment thiss) {
 photos.add(item);
-if(photos.size()==4){
+if(photos.size()==8){
+
         mylistview = (ListView) root.findViewById(R.id.list);
 
         CustomAdapter adapter = new CustomAdapter(getContext(), photos);
@@ -110,7 +135,7 @@ if(photos.size()==4){
 
         );
         RequestQueue queue = Volley.newRequestQueue(getActivity().getApplicationContext());
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 8; i++) {
 
                 queue.add(stringRequest);
 

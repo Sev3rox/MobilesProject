@@ -5,26 +5,31 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="2dp"
+
     >
+
 <ImageView
     android:id="@+id/profile_pic"
-    android:layout_width="70dp"
-    android:layout_height="70dp"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
     android:contentDescription="desc"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     tools:ignore="MissingConstraints" />
 
     <TextView
+        android:autoLink="all"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
         android:id="@+id/url_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/profile_pic"
         android:text="txt"
         android:textColor="@color/colorText"
-        android:textSize="16sp"
+        android:textSize="18sp"
         tools:ignore="MissingConstraints"
-
+        android:background="@color/colorPrimary"
          />
 
 </RelativeLayout>

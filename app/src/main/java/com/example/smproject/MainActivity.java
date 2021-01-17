@@ -5,6 +5,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import com.example.smproject.sqlite.DatabaseHandler;
 import com.example.smproject.sqlite.setings;
+import com.example.smproject.ui.Photos.PhotosCatsFragment;
 import com.example.smproject.ui.Photos.PhotosFragment;
 import com.example.smproject.ui.Photos.PhotosListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -89,6 +90,28 @@ public void photoslist(){
 
 
 }
+
+    public void photoszdjecia(){
+        PhotosFragment fragment2 = new PhotosFragment();
+        FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.commit();
+//FragmentManager fm=getSupportFragmentManager();
+//fm.beginTransaction().add(R.id.nav_host_fragment, fragment2).commit();
+
+
+    }
+
+    public void photoscats(){
+        PhotosCatsFragment fragment2 = new PhotosCatsFragment();
+        FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.commit();
+//FragmentManager fm=getSupportFragmentManager();
+//fm.beginTransaction().add(R.id.nav_host_fragment, fragment2).commit();
+
+
+    }
 
 }
 

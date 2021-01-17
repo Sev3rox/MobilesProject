@@ -6,5 +6,6 @@
     <string name="button1_photos">Następny</string>
     <string name="button2_photos">Lista</string>
     <string name="button3_photos">Kategorie</string>
+    <string name="button21_photos">Zdjęcia</string>
 
 </resources>

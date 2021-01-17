@@ -58,12 +58,12 @@ public class PhotosFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+                ViewGroup container, Bundle savedInstanceState) {
 
 
 
-        final View root = inflater.inflate(R.layout.fragment_photos, container, false);
-pom=0;
+            final View root = inflater.inflate(R.layout.fragment_photos, container, false);
+            pom=0;
 
 
 
@@ -89,7 +89,8 @@ pom=0;
         but3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                apitext(ss);
+                //https://api.thecatapi.com/v1/images/search?breed_ids=beng
+                ((MainActivity)getActivity()).photoscats();
             }
         });
      imgview= root.findViewById(R.id.image_photos);
