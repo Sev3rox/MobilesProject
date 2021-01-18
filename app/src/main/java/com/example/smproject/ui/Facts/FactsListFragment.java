@@ -87,10 +87,11 @@ public class FactsListFragment extends Fragment implements AdapterView.OnItemCli
             @Override
             public void onSensorChanged(SensorEvent sensorEvent){
                 light=sensorEvent.values[0];
-                TextView view=(TextView)root.findViewById(R.id.tekst2);
-                Log.d(">>>>>>>>>>>>>  ", view.toString());
+              //  TextView view=(TextView)root.findViewById(R.id.tekst2);
+               // Log.d(">>>>>>>>>>>>>  ", view.toString());
                 //int colorCode=(int) view.getTag();
-                Log.d(">>>>>>>>>>>>>  ", Float.toString(light));
+             //   Log.d(">>>>>>>>>>>>>  ", Float.toString(light));
+                Log.d(">>>>>>>>>>>>>  ", ""+light);
                             /*if(light>126&&(((TextView)root.findViewById(R.id.tekst2)).getContext().getResources()).getColor(R.color.colorText)!=colorCode)
                             {
                                 ((TextView)root.findViewById(R.id.tekst2)).setBackgroundColor((((TextView)root.findViewById(R.id.tekst2)).getContext().getResources()).getColor(R.color.colorText));
@@ -182,7 +183,7 @@ public class FactsListFragment extends Fragment implements AdapterView.OnItemCli
     @Override
     public void onResume(){
         super.onResume();
-        if(photos.size()==8) {
+ {
             sensorManager.registerListener(lightEventListener, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
         }
     }
@@ -190,7 +191,7 @@ public class FactsListFragment extends Fragment implements AdapterView.OnItemCli
     @Override
     public void onPause(){
         super.onPause();
-        if(photos.size()==8) {
+       {
             sensorManager.unregisterListener(lightEventListener);
         }
     }

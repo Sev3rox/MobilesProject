@@ -1,8 +1,8 @@
 
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍŠà8›•˜”ï.
-{
-java:S2293L"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚£ĞÃùÿÿÿÿ8›•˜”ï.
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍŠà8›•˜”ï.
 f
-java:S2259D"DA "NullPointerException" could be thrown; "cursor" is nullable here.(§¯¹¨üÿÿÿÿ8›•˜”ï.
+java:S2259E"DA "NullPointerException" could be thrown; "cursor" is nullable here.(§¯¹¨üÿÿÿÿ8›•˜”ï.
+{
+java:S2293M"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚£ĞÃùÿÿÿÿ8›•˜”ï.
 
-java:S1488D"_Immediately return this expression instead of assigning it to the temporary variable "setings".(§¯¹¨üÿÿÿÿ8ˆ¿”ï.
+java:S1488E"_Immediately return this expression instead of assigning it to the temporary variable "setings".(§¯¹¨üÿÿÿÿ8ˆ¿”ï.

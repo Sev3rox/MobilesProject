@@ -17,7 +17,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -31,10 +34,15 @@ import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.example.smproject.MainActivity;
 import com.example.smproject.R;
+import com.example.smproject.sqlite.DatabaseHandler;
+import com.example.smproject.sqlite.setings;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
+import java.util.List;
 
 import static androidx.core.content.ContextCompat.getSystemService;
 
@@ -52,6 +60,7 @@ public class PhotosFragment extends Fragment {
     private Button but1;
     private Button but2;
     private Button but3;
+    private ImageButton but4;
     private PhotosFragment ss;
     private int pom;
 
@@ -70,6 +79,7 @@ public class PhotosFragment extends Fragment {
          but1 = (Button)root.findViewById(R.id.buttonphotonext);
         but2 = (Button)root.findViewById(R.id.buttonphotolist);
         but3 = (Button)root.findViewById(R.id.buttonphotocat);
+        but4 = (ImageButton)root.findViewById(R.id.favorite_button);
         ss=this;
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +103,31 @@ public class PhotosFragment extends Fragment {
                 ((MainActivity)getActivity()).photoscats();
             }
         });
+
+        but4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //  Toast toast = Toast.makeText(MainActivity.context, "stmh", Toast.LENGTH_SHORT);
+              //   toast.show();
+
+                DatabaseHandler db = new DatabaseHandler(MainActivity.context);
+                String pom=pho.geturl();
+                List<setings> setings = db.getAllSetings();
+                setings pom2=setings.get(0);
+                pom2.setName(pom);
+                db.updateSetings(pom2);
+
+                for (setings se : setings) {
+                    String log = "Id: " + se.getID() + " ,Name: " + se.getName() + " ,Mode: " +
+                            se.getMode()+ " ,Mode2: " +se.getMode2();
+                    // Writing Contacts to log
+                    Log.d("Name: ", log);
+                }
+            }
+        });
+
+
+
      imgview= root.findViewById(R.id.image_photos);
         apitext(this);
 

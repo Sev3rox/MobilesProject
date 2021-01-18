@@ -1,21 +1,28 @@
 
+p
+java:S1450?"SRemove the "but4" field and declare it as a local variable in the relevant methods.(é…Öà8äæ©ñ.
 h
-java:S1128"FRemove this unused import 'androidx.fragment.app.FragmentTransaction'.(¦İÚ¿şÿÿÿÿ8ÁÇì¼ğ.
-Ÿ
-java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(§Ûëè8»éÕ´ğ.
-\
-java:S1161<":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8…õ€ñ.
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+java:S1128"FRemove this unused import 'androidx.fragment.app.FragmentTransaction'.(¦İÚ¿şÿÿÿÿ8äæ©ñ.
 s
-java:S1192£"PDefine a constant instead of duplicating this literal ">>>>>>>>>>>>>  " 4 times.(¡ÍÄĞúÿÿÿÿ8¼éÂ²ğ.
+java:S1192Æ"PDefine a constant instead of duplicating this literal ">>>>>>>>>>>>>  " 4 times.(¡ÍÄĞúÿÿÿÿ8äæ©ñ.
 Z
 java:S1128"8Remove this unused import 'android.app.FragmentManager'.(í£“ûÿÿÿÿ8ù€À»ğ.
-p
-java:S14504"SRemove the "but1" field and declare it as a local variable in the relevant methods.(ÙÃÍ÷8Ôõï´ğ.
-J	java:S108")Either remove or fill this block of code.(éºÕîûÿÿÿÿ8Ì»Æ·ğ.
-p
-java:S14506"SRemove the "but3" field and declare it as a local variable in the relevant methods.(Í¦¸Î8Ôõï´ğ.
+K	java:S108¢")Either remove or fill this block of code.(éºÕîûÿÿÿÿ8äæ©ñ.
 u
-java:S14505"SRemove the "but2" field and declare it as a local variable in the relevant methods.(ÄÔ«Àøÿÿÿÿ8Ôõï´ğ.
+java:S1450="SRemove the "but2" field and declare it as a local variable in the relevant methods.(ÄÔ«Àøÿÿÿÿ8Ôõï´ğ.
+Ÿ
+java:S1186«"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(§Ûëè8äæ©ñ.
+p
+java:S1450>"SRemove the "but3" field and declare it as a local variable in the relevant methods.(Í¦¸Î8äæ©ñ.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+p
+java:S1450<"SRemove the "but1" field and declare it as a local variable in the relevant methods.(ÙÃÍ÷8Ôõï´ğ.
+j
+java:S2095q"MUse try-with-resources or close this "DatabaseHandler" in a "finally" clause.(š‹¤8£Œ‚ªñ.
+\
+java:S1161E":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8äæ©ñ.
+]	java:S125n"<This block of commented-out lines of code should be removed.(ñæš¿ıÿÿÿÿ8ÿêü©ñ.
 U
-java:S10681"3Remove this unused "photosViewModel" private field.(·½²ßüÿÿÿÿ8…²å³ğ.
+java:S10689"3Remove this unused "photosViewModel" private field.(·½²ßüÿÿÿÿ8äæ©ñ.
+T
+java:S1117r"7Rename "pom" which hides the field declared at line 65.(Àıš÷8ÿêü©ñ.

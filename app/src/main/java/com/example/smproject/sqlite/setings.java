@@ -4,16 +4,19 @@ public class setings {
     int _id;
     String _name;
     int _mode;
+    int _mode2;
     public setings(){   }
-    public setings(int id, String name, int mode){
+    public setings(int id, String name, int _mode, int _mode2){
         this._id = id;
         this._name = name;
         this._mode = _mode;
+        this._mode2 = _mode2;
     }
 
-    public setings(String name, int _mode){
+    public setings(String name, int _mode, int _mode2){
         this._name = name;
         this._mode = _mode;
+        this._mode2 = _mode2;
     }
     public int getID(){
         return this._id;
@@ -37,5 +40,13 @@ public class setings {
 
     public void setMode(int mode){
         this._mode = mode;
+    }
+
+    public int getMode2(){
+        return this._mode2;
+    }
+
+    public void setMode2(int mode2){
+        this._mode2 = mode2;
     }
 }

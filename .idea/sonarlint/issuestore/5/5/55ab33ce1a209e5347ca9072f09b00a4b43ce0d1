@@ -1,12 +1,40 @@
 
+b
+java:S1128"ERemove this unused import 'com.android.volley.toolbox.StringRequest'.(”¯ÆŞ8ä‚»ªñ.
+[
+java:S1128">Remove this unused import 'com.android.volley.toolbox.Volley'.(¢‰Ò¶8ä‚»ªñ.
+R
+java:S1128""0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8ä‚»ªñ.
+Z
+java:S1128"8Remove this unused import 'androidx.lifecycle.Observer'.(ÒÁˆÉşÿÿÿÿ8¬ñÉ¨ñ.
+d
+java:S1128"BRemove this unused import 'androidx.lifecycle.ViewModelProviders'.(ê· ºÿÿÿÿÿ8¬ñÉ¨ñ.
+j
+java:S20950"MUse try-with-resources or close this "DatabaseHandler" in a "finally" clause.(š‹¤8ĞÆÃªñ.
+_
+java:S1128"BRemove this unused import 'com.example.smproject.ui.Photos.Photo'.(ïæ´8ä‚»ªñ.
+V
+java:S1128"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8¬ñÉ¨ñ.
+X
+java:S1128";Remove this unused import 'com.android.volley.VolleyError'.(­°Ñ”8ä‚»ªñ.
+T
+java:S1128"7Remove this unused import 'com.android.volley.Request'.(Å½ä8ä‚»ªñ.
 \
-java:S1874":Remove this use of "ViewModelProviders"; it is deprecated.(ƒú§¢øÿÿÿÿ8âÂ®‰ï.
-‚
-java:S1450"`Remove the "settingsViewModel" field and declare it as a local variable in the relevant methods.(Œê½ßúÿÿÿÿ8”‹°‰ï.
-L
-java:S1874"*Remove this use of "of"; it is deprecated.(ƒú§¢øÿÿÿÿ8âÂ®‰ï.
-\
-java:S1161":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8âÂ®‰ï.
+java:S1161*":Add the "@Override" annotation above this method signature(î•Éğûÿÿÿÿ8âÂ®‰ï.
+h
+java:S1128"KRemove this unused import 'com.example.smproject.ui.Photos.PhotosFragment'.(„Ø«™8ä‚»ªñ.
+U
+java:S1128"8Remove this unused import 'com.android.volley.Response'.(ˆïƒ 8ä‚»ªñ.
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü·ÉÏ
+U
+java:S1128!"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8ä‚»ªñ.
+Y
+java:S1128"<Remove this unused import 'com.android.volley.RequestQueue'.(¹şÌ×8ä‚»ªñ.
 q
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÃÀù8î—Î‹ï.
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÃÀù8î—Î‹ï.
+O
+java:S1128"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8ä‚»ªñ.
+V
+java:S1128	"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ÇªÈ¨ñ.
+Q
+java:S1128 "/Remove this unused import 'org.json.JSONArray'.(¬¸Ê’üÿÿÿÿ8ä‚»ªñ.

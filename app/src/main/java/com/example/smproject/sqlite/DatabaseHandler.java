@@ -16,6 +16,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "name";
     private static final String KEY_MODE = "mode";
+    private static final String KEY_MODE2 = "mode2";
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -27,7 +28,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_SETINGS + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
-                + KEY_MODE + " INTERGER" + ")";
+                + KEY_MODE + " INTERGER,"+ KEY_MODE2 + " INTERGER" + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
@@ -48,7 +49,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(KEY_NAME, setings.getName()); // Contact Name
         values.put(KEY_MODE, setings.getMode()); // Contact Phone
-
+        values.put(KEY_MODE2, setings.getMode2());
         // Inserting Row
         db.insert(TABLE_SETINGS, null, values);
         //2nd argument is String containing nullColumnHack
@@ -60,13 +61,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_SETINGS, new String[] { KEY_ID,
-                        KEY_NAME, KEY_MODE }, KEY_ID + "=?",
+                        KEY_NAME, KEY_MODE, KEY_MODE2 }, KEY_ID + "=?",
                 new String[] { String.valueOf(id) }, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
         setings setings = new setings(Integer.parseInt(cursor.getString(0)),
-                cursor.getString(1), cursor.getInt(2));
+                cursor.getString(1), cursor.getInt(2), cursor.getInt(3));
         // return contact
         return setings;
     }
@@ -87,6 +88,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 contact.setID(Integer.parseInt(cursor.getString(0)));
                 contact.setName(cursor.getString(1));
                 contact.setMode(cursor.getInt(2));
+                contact.setMode2(cursor.getInt(3));
                 // Adding contact to list
                 contactList.add(contact);
             } while (cursor.moveToNext());
@@ -103,6 +105,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(KEY_NAME, setings.getName());
         values.put(KEY_MODE, setings.getMode());
+        values.put(KEY_MODE2, setings.getMode());
 
         // updating row
         return db.update(TABLE_SETINGS, values, KEY_ID + " = ?",

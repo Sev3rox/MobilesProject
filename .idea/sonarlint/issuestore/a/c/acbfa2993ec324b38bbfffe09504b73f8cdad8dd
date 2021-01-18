@@ -1,10 +1,10 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ„ôØşÿÿÿÿ8¬Öú“ï.
-G
-java:S1172"+Remove this unused method parameter "mode".(Ş“¤{8§Ò„”ï.
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…Ö¯È8œ÷ú“ï.
-q	java:S116"PRename this field "_mode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇË«¦ıÿÿÿÿ8¯²…”ï.
-…
-java:S4165"cRemove this useless assignment; "_mode" already holds the assigned value along all execution paths.(¯šôèùÿÿÿÿ8±†”ï.
+r	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïë‚öÿÿÿÿÿ8ÙÑé©ñ.
 l	java:S116"PRename this field "_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä£‹ä8¬Öú“ï.
+r	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïë‚öÿÿÿÿÿ8ñêé©ñ.
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…Ö¯È8œ÷ú“ï.
+m	java:S116"QRename this field "_mode2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ã´¢8š˜©ñ.
 o	java:S116"NRename this field "_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»İÎ®ıÿÿÿÿ8¬Öú“ï.
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ã›Z8¬Öú“ï.
+q	java:S116"PRename this field "_mode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇË«¦ıÿÿÿÿ8š˜©ñ.
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ã›Z8ˆ€ê©ñ.

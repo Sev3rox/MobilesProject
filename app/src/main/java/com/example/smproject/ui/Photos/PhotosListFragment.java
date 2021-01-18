@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -58,6 +59,17 @@ String[] urls;
 
             photosListViewModel =ViewModelProviders.of(this).get(PhotosListViewModel.class);
             View root = inflater.inflate(R.layout.fragment_photoslist, container, false);
+
+
+
+
+
+
+
+
+
+
+
 
 
             but1 = (Button)root.findViewById(R.id.buttonphotozdjecia);
@@ -156,5 +168,8 @@ return stringRequest;
                             long id) {
 
     }
+
+
+
     }
 

@@ -62,20 +62,18 @@ context=getApplicationContext();
         NavigationUI.setupWithNavController(navView, navController);
         DatabaseHandler db = new DatabaseHandler(this);
 
-        // Inserting Contacts
-      /*  Log.d("Insert: ", "Inserting ..");
-        db.addSetings(new setings("Ravi", 999));
-        db.addSetings(new setings("Srinivas", 900));
-        db.addSetings(new setings("Tommy", 990));
-        db.addSetings(new setings("Karthik", 9999));
 
-        // Reading all contacts
-        Log.d("Reading: ", "Reading all contacts..");*/
+
+
+
         List<setings> setings = db.getAllSetings();
+        if(setings==null){
+            db.addSetings(new setings(null, 1,1));
+        }
 
         for (setings se : setings) {
             String log = "Id: " + se.getID() + " ,Name: " + se.getName() + " ,Mode: " +
-                    se.getMode();
+                    se.getMode()+ " ,Mode2: " +se.getMode2();
             // Writing Contacts to log
             Log.d("Name: ", log);
         }
@@ -86,7 +84,7 @@ context=getApplicationContext();
 public void photoslist(){
     PhotosListFragment fragment2 = new PhotosListFragment();
     FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
-    ft.replace(R.id.nav_host_fragment, fragment2);
+    ft.replace(R.id.nav_host_fragment, fragment2).addToBackStack(null);
     ft.commit();
 //FragmentManager fm=getSupportFragmentManager();
 //fm.beginTransaction().add(R.id.nav_host_fragment, fragment2).commit();
@@ -97,7 +95,7 @@ public void photoslist(){
     public void photoszdjecia(){
         PhotosFragment fragment2 = new PhotosFragment();
         FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.replace(R.id.nav_host_fragment, fragment2).addToBackStack(null);
         ft.commit();
 
 
@@ -106,20 +104,20 @@ public void photoslist(){
     public void facts(){
         FactsFragment fragment2 = new FactsFragment();
         FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.replace(R.id.nav_host_fragment, fragment2).addToBackStack(null);
         ft.commit();
     }
     public void factslist(){
         FactsListFragment fragment2 = new FactsListFragment();
         FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.replace(R.id.nav_host_fragment, fragment2).addToBackStack(null);
         ft.commit();
     }
 
     public void photoscats(){
         PhotosCatsFragment fragment2 = new PhotosCatsFragment();
         FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.replace(R.id.nav_host_fragment, fragment2).addToBackStack(null);
         ft.commit();
 
 
@@ -129,13 +127,16 @@ public void photoslist(){
     public void photoscatsrnd(String pom){
         PhotosCatsRndFragment fragment2 = new PhotosCatsRndFragment(pom);
         FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.replace(R.id.nav_host_fragment, fragment2).addToBackStack(null);
         ft.commit();
 //FragmentManager fm=getSupportFragmentManager();
 //fm.beginTransaction().add(R.id.nav_host_fragment, fragment2).commit();
 
 
     }
+
+
+
 
 }
 
