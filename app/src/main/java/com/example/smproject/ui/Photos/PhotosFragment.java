@@ -228,12 +228,22 @@ public class PhotosFragment extends Fragment {
     @Override
     public void onResume(){
         super.onResume();
+        setings pom2;
+        DatabaseHandler db = new DatabaseHandler(MainActivity.context);
+        List<setings> setings = db.getAllSetings();
+        pom2=setings.get(0);
+        if(pom2.getMode()==1)
         sensorManager.registerListener(gyroscopeEventListener, gyroscopeSensor,SensorManager.SENSOR_DELAY_FASTEST);
     }
 
     @Override
     public void onPause(){
         super.onPause();
+        setings pom2;
+        DatabaseHandler db = new DatabaseHandler(MainActivity.context);
+        List<setings> setings = db.getAllSetings();
+        pom2=setings.get(0);
+        if(pom2.getMode()==1)
         sensorManager.unregisterListener(gyroscopeEventListener);
     }
 
