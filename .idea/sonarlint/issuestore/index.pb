@@ -41,3 +41,7 @@ y
 Iapp/src/main/java/com/example/smproject/ui/Photos/PhotosCatsFragment.java,5\0\502960a1ec02f5b3779bfef3ae983a40a7d628a5
 |
 Lapp/src/main/java/com/example/smproject/ui/Photos/PhotosCatsRndFragment.java,e\b\ebadf58c764ed79f2610fddf787006534c6c3a46
+j
+:app/src/main/java/com/example/smproject/ui/Facts/Fact.java,8\4\8458cd8a313fc44bb4225153af228fbdead6602a
+w
+Gapp/src/main/java/com/example/smproject/ui/Facts/FactsListFragment.java,d\8\d81f328563c0627c87e5614da6f042b52af78ab7

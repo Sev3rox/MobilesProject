@@ -1,23 +1,23 @@
 
-P
-java:S1128".Remove this unused import 'android.view.View'.(Ø½­äþÿÿÿÿ8Ý¨ƒ»ð.
-{
-java:S1450 "^Remove the "gyroscopeSensor" field and declare it as a local variable in the relevant methods.(¾õÑ«8¥Éù´ð.
 y
-java:S1450"\Remove the "sensorManager" field and declare it as a local variable in the relevant methods.(Þ¬–„8¥Éù´ð.
-X
-java:S26961"6Make the enclosing method "static" or remove this set.(÷•¼Äÿÿÿÿÿ8ŸÎ¡âð.
-X	java:S125@"<This block of commented-out lines of code should be removed.(¼ÆÖá8®‹ï³ð.
-j
-java:S2095="MUse try-with-resources or close this "DatabaseHandler" in a "finally" clause.(òÌ•Ì8±áÎ»ð.
-]	java:S125Y"<This block of commented-out lines of code should be removed.(ô¨ÓÉÿÿÿÿÿ8Òï»¼ð.
-\
-java:S1128":Remove this unused import 'android.widget.RelativeLayout'.(ü¯ðõþÿÿÿÿ8Ô½òºð.
-]
-java:S1128";Remove this unused import 'androidx.fragment.app.Fragment'.(‚Š©“ùÿÿÿÿ8‘é§¹ð.
-X	java:S110"<This class has 9 parents which is greater than 5 authorized.(²Ú±Ž8®‹ï³ð.
+java:S1450!"\Remove the "sensorManager" field and declare it as a local variable in the relevant methods.(Þ¬–„8¥Éù´ð.
+^	java:S125†"<This block of commented-out lines of code should be removed.(ô¨ÓÉÿÿÿÿÿ8½¦‹„ñ.
 J
-java:S1444""-Make this "public static context" field final(Òò®­8ŸÎ¡âð.
+java:S1444$"-Make this "public static context" field final(Òò®­8ŸÎ¡âð.
+\
+java:S1128":Remove this unused import 'android.widget.RelativeLayout'.(ü¯ðõþÿÿÿÿ8Ô½òºð.
+P
+java:S1128".Remove this unused import 'android.view.View'.(Ø½­äþÿÿÿÿ8Ý¨ƒ»ð.
+{
+java:S1450""^Remove the "gyroscopeSensor" field and declare it as a local variable in the relevant methods.(¾õÑ«8¥Éù´ð.
+X	java:S110"<This class has 9 parents which is greater than 5 authorized.(²Ú±Ž8®‹ï³ð.
 p
-java:S1104""SMake context a static final constant or non-public and provide accessors if needed.(Òò®­8½Ð âð.
-]	java:S125x"<This block of commented-out lines of code should be removed.(ô¨ÓÉÿÿÿÿÿ8½¦‹„ñ.
+java:S1104$"SMake context a static final constant or non-public and provide accessors if needed.(Òò®­8½Ð âð.
+]
+java:S1128";Remove this unused import 'androidx.fragment.app.Fragment'.(‚Š©“ùÿÿÿÿ8‘é§¹ð.
+]	java:S125["<This block of commented-out lines of code should be removed.(ô¨ÓÉÿÿÿÿÿ8Òï»¼ð.
+X
+java:S26963"6Make the enclosing method "static" or remove this set.(÷•¼Äÿÿÿÿÿ8ŸÎ¡âð.
+X	java:S125B"<This block of commented-out lines of code should be removed.(¼ÆÖá8®‹ï³ð.
+j
+java:S2095?"MUse try-with-resources or close this "DatabaseHandler" in a "finally" clause.(òÌ•Ì8±áÎ»ð.

@@ -5,6 +5,8 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import com.example.smproject.sqlite.DatabaseHandler;
 import com.example.smproject.sqlite.setings;
+import com.example.smproject.ui.Facts.FactsFragment;
+import com.example.smproject.ui.Facts.FactsListFragment;
 import com.example.smproject.ui.Photos.PhotosCatsFragment;
 import com.example.smproject.ui.Photos.PhotosCatsRndFragment;
 import com.example.smproject.ui.Photos.PhotosFragment;
@@ -100,6 +102,18 @@ public void photoslist(){
 
 
 
+    }
+    public void facts(){
+        FactsFragment fragment2 = new FactsFragment();
+        FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.commit();
+    }
+    public void factslist(){
+        FactsListFragment fragment2 = new FactsListFragment();
+        FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.nav_host_fragment, fragment2);
+        ft.commit();
     }
 
     public void photoscats(){

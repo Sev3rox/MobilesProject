@@ -1,9 +1,9 @@
 
-r	java:S116("VRename this field "profile_pic" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Œ•ã8›ò’ßð.
 r	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï­Èðÿÿÿÿÿ8éøýØð.
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
-t	java:S116)"SRename this field "url_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¦Æêÿÿÿÿÿ8éøýØð.
 \
 java:S1854=":Remove this useless assignment to local variable "holder".(ôºÅ–ûÿÿÿÿ8ÐØÑ‡ñ.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+r	java:S116("VRename this field "profile_pic" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Œ•ã8›ò’ßð.
+t	java:S116)"SRename this field "url_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¦Æêÿÿÿÿÿ8éøýØð.
 q
 java:S3252/"OUse static access with "android.content.Context" for "LAYOUT_INFLATER_SERVICE".(ÿð¬Íýÿÿÿÿ8áþ´Øð.

@@ -1,21 +1,21 @@
 
-U
-java:S10681"3Remove this unused "photosViewModel" private field.(·½²ßüÿÿÿÿ8…²å³ð.
-Z
-java:S1128"8Remove this unused import 'android.app.FragmentManager'.(í£“žûÿÿÿÿ8ù€À»ð.
-\
-java:S1161<":Add the "@Override" annotation above this method signature(î•Éðûÿÿÿÿ8…õ€ñ.
-p
-java:S14506"SRemove the "but3" field and declare it as a local variable in the relevant methods.(Í¦¸Î8Ôõï´ð.
-u
-java:S14505"SRemove the "but2" field and declare it as a local variable in the relevant methods.(ÄÔ«Àøÿÿÿÿ8Ôõï´ð.
 h
 java:S1128"FRemove this unused import 'androidx.fragment.app.FragmentTransaction'.(¦ÝÚ¿þÿÿÿÿ8ÁÇì¼ð.
 Ÿ
 java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(§Ûëè8»éÕ´ð.
+\
+java:S1161<":Add the "@Override" annotation above this method signature(î•Éðûÿÿÿÿ8…õ€ñ.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
 s
 java:S1192£"PDefine a constant instead of duplicating this literal ">>>>>>>>>>>>>  " 4 times.(¡ÍÄÐúÿÿÿÿ8¼éÂ²ð.
-J	java:S108")Either remove or fill this block of code.(éºÕîûÿÿÿÿ8Ì»Æ·ð.
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Àº›~
+Z
+java:S1128"8Remove this unused import 'android.app.FragmentManager'.(í£“žûÿÿÿÿ8ù€À»ð.
 p
 java:S14504"SRemove the "but1" field and declare it as a local variable in the relevant methods.(ÙÃÍ÷8Ôõï´ð.
+J	java:S108")Either remove or fill this block of code.(éºÕîûÿÿÿÿ8Ì»Æ·ð.
+p
+java:S14506"SRemove the "but3" field and declare it as a local variable in the relevant methods.(Í¦¸Î8Ôõï´ð.
+u
+java:S14505"SRemove the "but2" field and declare it as a local variable in the relevant methods.(ÄÔ«Àøÿÿÿÿ8Ôõï´ð.
+U
+java:S10681"3Remove this unused "photosViewModel" private field.(·½²ßüÿÿÿÿ8…²å³ð.
