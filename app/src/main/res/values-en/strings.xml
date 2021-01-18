@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CatApp</string>
+    <string name="title_photos">Photos</string>
+    <string name="title_facts">Facts</string>
+    <string name="title_settings">Options</string>
+    <string name="button1_photos">Next</string>
+    <string name="button2_photos">List</string>
+    <string name="button3_photos">Categories</string>
+    <string name="button21_photos">Photos</string>
+    <string name="button4_photos">Categories</string>
+    <string name="button_beng">Bengal</string>
+    <string name="button_abys">Abyss</string>
+    <string name="button_bali">Balinese</string>
+    <string name="button_birm">Birman</string>
+    <string name="button_bomb">Bombay</string>
+    <string name="button_bure">Burmene</string>
+    <string name="button_hima">Himalayan</string>
+    <string name="button_java">Java</string>
+    <string name="button1_facts">List</string>
+    <string name="button2_facts">Fact</string>
+</resources>

@@ -67,7 +67,7 @@ context=getApplicationContext();
 
 
         List<setings> setings = db.getAllSetings();
-        if(setings==null){
+        if(setings.size()==0){
             db.addSetings(new setings(null, 1,1));
         }
 

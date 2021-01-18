@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,8 @@ import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.example.smproject.MainActivity;
 import com.example.smproject.R;
+import com.example.smproject.sqlite.DatabaseHandler;
+import com.example.smproject.sqlite.setings;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -57,10 +60,13 @@ public class FactsListFragment extends Fragment implements AdapterView.OnItemCli
     String url;
     private Button but1;
     private Button but2;
+    private boolean booll=true;
     private SensorManager sensorManager;
     private Sensor lightSensor;
     private SensorEventListener lightEventListener;
     private float light;
+    setings pom2;
+    DatabaseHandler db = new DatabaseHandler(MainActivity.context);
     public FactsListFragment(){}
 
 
@@ -85,25 +91,24 @@ public class FactsListFragment extends Fragment implements AdapterView.OnItemCli
 
         lightEventListener=new SensorEventListener(){
             @Override
-            public void onSensorChanged(SensorEvent sensorEvent){
-                light=sensorEvent.values[0];
-              //  TextView view=(TextView)root.findViewById(R.id.tekst2);
-               // Log.d(">>>>>>>>>>>>>  ", view.toString());
-                //int colorCode=(int) view.getTag();
-             //   Log.d(">>>>>>>>>>>>>  ", Float.toString(light));
-                Log.d(">>>>>>>>>>>>>  ", ""+light);
-                            /*if(light>126&&(((TextView)root.findViewById(R.id.tekst2)).getContext().getResources()).getColor(R.color.colorText)!=colorCode)
-                            {
-                                ((TextView)root.findViewById(R.id.tekst2)).setBackgroundColor((((TextView)root.findViewById(R.id.tekst2)).getContext().getResources()).getColor(R.color.colorText));
-                                ((TextView)root.findViewById(R.id.tekst2)).setTag(((((TextView)root.findViewById(R.id.tekst2)).getContext().getResources()).getColor(R.color.colorText)));
-                            }
-                            else if(light<126&&(((TextView)root.findViewById(R.id.tekst2)).getContext().getResources()).getColor(R.color.colorText)==colorCode)
-                            {
-                                ((TextView)root.findViewById(R.id.tekst2)).setBackgroundColor((((TextView)root.findViewById(R.id.tekst2)).getContext().getResources()).getColor(R.color.colorPrimary));
-                                ((TextView)root.findViewById(R.id.tekst2)).setTag(((((TextView)root.findViewById(R.id.tekst2)).getContext().getResources()).getColor(R.color.colorPrimary)));
-                            }*/
+            public void onSensorChanged(SensorEvent sensorEvent) {
+                if (photos.size() == 8) {
+                    light = sensorEvent.values[0];
+                    TextView view = (TextView) root.findViewById(R.id.tekst2);
+                    Log.d(">>>>>>>>>>>>>  ", view.toString());
+                    String colorCode=(String)view.getTag();
+                    Log.d(">>>>>>>>>>>>>  ", Float.toString(light));
+                    LinearLayout l=(LinearLayout) root.findViewById(R.id.bckg);
+                    if(light>20000&&booll==true)
+                    {booll=false;
+                        l.setBackgroundResource(R.drawable.cats1);
+                    }
+                    else if(light<20000&&booll==false)
+                    {booll=true;
+                        l.setBackgroundResource(R.drawable.cats2);
+                    }
+                }
             }
-
             @Override
             public void onAccuracyChanged(Sensor sensor, int i){
 
@@ -145,7 +150,7 @@ public class FactsListFragment extends Fragment implements AdapterView.OnItemCli
                     public void onResponse(String response) {
 
                         try{
-                           // Log.d(">>>>>>>>>>>>>  ", response);
+                            // Log.d(">>>>>>>>>>>>>  ", response);
                             //JSONArray arr = new JSONArray(response);
                             JSONObject jsonObj=new JSONObject(response);
                             String fact=new String(jsonObj.getString("fact"));
@@ -155,14 +160,14 @@ public class FactsListFragment extends Fragment implements AdapterView.OnItemCli
                         }
 
                         catch(final JSONException e){
-                           // Log.d(">>>>>>>>>>>>>  ", ""+e);
+                            // Log.d(">>>>>>>>>>>>>  ", ""+e);
                         }
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                       // Log.d(">>>>>>>>>>>>>  ", "" + error);
+                        // Log.d(">>>>>>>>>>>>>  ", "" + error);
                     }
 
                 }
@@ -183,17 +188,21 @@ public class FactsListFragment extends Fragment implements AdapterView.OnItemCli
     @Override
     public void onResume(){
         super.onResume();
- {
-            sensorManager.registerListener(lightEventListener, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
-        }
+        List<setings> setings = db.getAllSetings();
+        pom2=setings.get(0);
+        if(pom2.getMode2()==1)
+        sensorManager.registerListener(lightEventListener, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
     }
 
     @Override
     public void onPause(){
         super.onPause();
-       {
-            sensorManager.unregisterListener(lightEventListener);
-        }
+        List<setings> setings = db.getAllSetings();
+        pom2=setings.get(0);
+        if(pom2.getMode2()==1)
+        sensorManager.unregisterListener(lightEventListener);
+
     }
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position,

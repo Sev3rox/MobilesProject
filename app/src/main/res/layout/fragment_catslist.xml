@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@raw/cats"
+    android:background="@raw/cats1"
     tools:context=".ui.Photos.PhotosListFragment"
+    android:id="@+id/bckg"
     android:orientation="vertical">
 
     <Space

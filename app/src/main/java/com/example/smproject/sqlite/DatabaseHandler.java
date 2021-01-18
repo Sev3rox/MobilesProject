@@ -105,7 +105,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(KEY_NAME, setings.getName());
         values.put(KEY_MODE, setings.getMode());
-        values.put(KEY_MODE2, setings.getMode());
+        values.put(KEY_MODE2, setings.getMode2());
 
         // updating row
         return db.update(TABLE_SETINGS, values, KEY_ID + " = ?",

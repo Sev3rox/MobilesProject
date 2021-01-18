@@ -110,7 +110,6 @@ public class PhotosCatsFragment extends Fragment {
         });
 
 
-
         return root;
     }
 }
